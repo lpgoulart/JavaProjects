@@ -1,3 +1,6 @@
+// Leonardo Goulart
+// Java Programming language
+
 import java.util.Scanner;
 
 class uri1003 {
