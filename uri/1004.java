@@ -3,9 +3,9 @@
 
 import java.util.Scanner;
 
-public class Main {
+class uri1004 {
  
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
  
       Scanner scan = new Scanner(System.in);
 		int x = scan.nextInt();
