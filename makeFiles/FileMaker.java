@@ -32,7 +32,7 @@ class FileMaker {
 			*	fileName = scan.nextLine();
 			*	path = path + fileName; //(need to test if this works first)
 			*/
-			String path = "../JavaIntroduction/FirstSteps/test.java";
+			String path = "Test.java";
 			// File creation and verifying if it doesn't exist. If so create a new
 			File file = new File(path);
 				if (!file.exists()) {
