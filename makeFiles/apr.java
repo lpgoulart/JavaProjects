@@ -7,24 +7,47 @@ import java.util.ArrayList;
 class testando {
 
 	public static void main(String[] args) {
-		
-		Scanner scan = new Scanner(System.in);
-		String line = scan.nextLine();
-		ArrayList<String> lista = new ArrayList<String>();
+		try 
+		{
+			boolean entry = true;
+			String path = "../JavaIntroduction/FirstSteps/test.java";
+			File file = new File(path);
+				if (!file.exists()) {
+				    file.createNewFile();
+				}
+			Scanner scan = new Scanner(System.in);
+			ArrayList<String> lista = new ArrayList<String>();
 
-		System.out.println(line);
+			
+			FileWriter fw = new FileWriter(file.getAbsoluteFile());
+			    BufferedWriter bw = new BufferedWriter(fw);
+			
+			String line;
+			String exit = "exit";
 
-		lista.add(line);
-		lista.add("frase");
-		int size = lista.size();
-		System.out.println(size);
-		int index = 0; 
-		
-		do {
-			System.out.println("removendo item " + (index + 1));
-			System.out.println(lista.remove(0));
-			index++;
-			size = lista.size();
-		} while (size != 0);
+			while (entry) {
+				
+				line = scan.nextLine();
+				
+				if (line.equals(exit)) {
+					entry = false;
+				} else {
+					lista.add (line);
+				}
+				
+			}
+			
+				do 
+				{
+					bw.write(lista.remove(0) + "\n");
+				} while (lista.size() != 0);
+				bw.close();
+
+		} 
+		catch (Exception e) 
+		{
+			System.out.println(e);
+		}
 	}
 }
+
