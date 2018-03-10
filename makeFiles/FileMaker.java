@@ -28,7 +28,7 @@ class FileMaker {
 			path = scan.nextLine();
 			System.out.println("Give a name for your file: ");
 			fileName = scan.nextLine();
-			path = "../" + path + "/" + fileName + ".java"; //(need to test if this works first)
+			path = "../" + path + "/" + fileName + ".java"; 
 			
 			// File creation and verifying if it doesn't exist. If so create a new
 			File file = new File(path);
