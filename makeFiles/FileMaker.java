@@ -61,6 +61,7 @@ class FileMaker {
 				bw.write(lista.remove(0) + "\n");
 			} while (lista.size() != 0);
 			bw.close();
+			System.out.println("File Created successfully");
 
 		} 
 		catch (Exception e) 
