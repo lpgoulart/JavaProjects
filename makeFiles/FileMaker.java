@@ -50,7 +50,7 @@ class FileMaker {
 			System.out.println("Name your class:");
 			line = scan.nextLine();
 			lista.add ("\n");
-			lista.add ("class " + line + " {\n");
+			lista.add ("class " + line + " {");
 			lista.add ("	public static void main (String[] args) {\n");
 			lista.add ("	}");
 			lista.add ("}");
