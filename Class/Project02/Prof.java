@@ -11,8 +11,10 @@ public class Prof {
 	// They are seen by every class extended from this
 
 	// Constructor
-		Prof () {
-			
+		Prof ( String name, String id, int age ) {
+			this.name = name;
+			this.id   = id;
+			this.age  = age;
 		}
 
 	// Set functions
@@ -24,7 +26,7 @@ public class Prof {
 			this.id = id;
 		}
 
-		public void setAge ( String age ) {
+		public void setAge ( int age ) {
 			this.age = age;
 		}
 
@@ -39,5 +41,10 @@ public class Prof {
 
 		public int getAge () {
 			return this.age;
+		}
+
+	// Salary function
+		public double salary () {
+			return 0.0;
 		}
 }

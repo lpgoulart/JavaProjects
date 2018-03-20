@@ -2,14 +2,15 @@
 // Java Programming language
 // Project 02
 
-public class ProfInt {
+public class ProfInt extends Prof{
 
 	// Private variables declaration
 		private double salary;
 
 	// Constructor
-		ProfInt () {
-			
+		ProfInt (String name, String id, int age, double salary) {
+			super ( name, id, age );
+			this.salary = salary;
 		}
 
 	// Set functions
@@ -19,6 +20,11 @@ public class ProfInt {
 
 	// Get Functions
 		public double getSalary () {
+			return this.salary;
+		}
+
+	// Salary function 
+		public double salary () {
 			return this.salary;
 		}
 }
