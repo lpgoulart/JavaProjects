@@ -33,7 +33,8 @@ public class ContaBancaria {
 	*	@return Novo valor de variavel saldo
 	*/	
 		public double sacar ( int valor_Sacado ) {
-			return this.saldo - valor_Sacado;
+			this.saldo -= valor_Sacado;
+			return this.saldo;
 		}
 
 //------------------------------------------------------------
@@ -41,8 +42,9 @@ public class ContaBancaria {
 	*	@param Valor inteiro que sera adicionado da variavel saldo
 	*	@return Novo valor de variavel saldo
 	*/	
-		public double depositar ( int valor_Depositado ) {;
-			return this.saldo + valor_Depositado;
+		public double depositar ( int valor_Depositado ) {
+			this.saldo += valor_Depositado;
+			return this.saldo;
 		}
 
 //------------------------------------------------------------

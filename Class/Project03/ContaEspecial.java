@@ -37,9 +37,9 @@ public class ContaEspecial extends ContaBancaria {
 	*	@return Print das informacoes do objeto
 	*/	
 		static public void toString ( ContaEspecial conta ) {
-			System.out.println ( "Cliente: " + conta.getNome_Cliente () );
-			System.out.println ( "Numero da conta: " + conta.getNumero_Conta () );
-			System.out.println ( "Saldo disponivel: " + conta.getSaldo () );
+			System.out.println ( "Cliente         : " + conta.getNome_Cliente () );
+			System.out.println ( "Numero da conta : " + conta.getNumero_Conta () );
+			System.out.println ( "Saldo disponivel: " + conta.getSaldo ()        );
 		}  
 
 }
